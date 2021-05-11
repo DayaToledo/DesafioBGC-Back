@@ -40,3 +40,11 @@ functions:
           path: send
           method: post
           cors: true
+
+  createEmail:
+    handler: src/controllers/EmailController.create
+    events:
+      - http:
+          path: create
+          method: post
+          cors: true
