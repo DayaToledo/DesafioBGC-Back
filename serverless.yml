@@ -33,3 +33,10 @@ provider:
       Resource: "arn:aws:dynamodb:sa-east-1:*:*"
 
 functions:
+  sendEmail:
+    handler: src/controllers/SendMailController.main
+    events:
+      - http:
+          path: send
+          method: post
+          cors: true
