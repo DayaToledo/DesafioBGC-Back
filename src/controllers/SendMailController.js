@@ -17,8 +17,9 @@ export const main = handler( async (event, context) => {
         to: email,
         subject: "Mensagem do Cupido Online pra você!",
         html: `
-            <h2>Olá, ${name}!</h2></br>
-            <h3>Você acaba de receber uma mensagem anônima do Cupido Online!</h3></br>
+            <h2>Olá, ${name}!</h2></br></br>
+            <h3>Você acaba de receber uma mensagem anônima do Cupido Online!</h3></br></br>
+            <h4>Seu admirador secreto diz:</h4></br>
             <p>${text}</p>
         `
     });
